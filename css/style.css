@@ -1,0 +1,294 @@
+*{
+     margin: 0;
+     padding: 0;
+     font-family: 'Manrope', sans-serif;
+     font-family: 'Poppins', sans-serif;
+     Font-size: 18px;
+}
+
+.container{
+    height: max-content;
+    margin: auto;
+}
+
+header{
+    max-width: 1440px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    margin: auto;
+}
+
+header div{
+    display: flex;
+    width: 550px;
+    height: min-content;
+    justify-content: space-between;
+}
+
+header span{
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+header ul{
+    width: 350px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin: auto 0;
+}
+
+header li{
+    cursor: pointer;
+    color: hsl(257, 7%, 63%);
+}
+
+header li:hover{
+    color: hsl(255, 11%, 22%);
+}
+
+.login{
+    width: 250px;
+    height: max-content;
+    justify-content: space-between;
+}
+
+.login li{
+    text-align: center;
+    padding: 10px 30px;
+    color: hsl(257, 7%, 63%);
+}
+
+.login li:hover{
+    background-color:  hsl(180, 66%, 49%);
+    border-radius: 50px;
+    color: #f7f7f7;
+}
+
+.intro{
+    height: 500px;
+    background-image: url("/images/illustration-working.svg");
+    background-repeat: no-repeat;
+    background-position: 60vw;
+}
+
+.introCont{
+    max-width: 1440px;
+    height: 500px;
+    margin: auto;
+    display: flex;
+}
+
+.introCont h1{
+    font-weight: 700px;
+    font-size: 5rem;
+    color: hsl(255, 11%, 22%);
+    line-height: 100px;
+}
+
+.introCont p{
+    color: hsl(257, 7%, 63%);
+    font-size: 1.3rem;
+}
+
+.introCont button{
+    border: none;
+    background-color:  hsl(180, 66%, 49%);
+    color: #f7f7f7;
+    border-radius: 50px;
+    padding: 10px 30px;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+.introCont button:hover{
+    background-color:  hsla(180, 66%, 49%, 0.596);
+}
+
+.introCont div{
+    width: 800px;
+    height: max-content;
+    margin: auto 0;
+}
+
+.earch{
+    height: max-content;
+}
+
+.earchContainer{
+    max-width: 1440px;
+    height: max-content;
+    margin: auto;
+}
+
+.earchDiv{
+    height: 150px;
+    background-image: url("/images/bg-boost-desktop.svg");
+    background-position: center;
+    background-color: hsl(257, 27%, 26%);
+    border-radius: 10px;
+    margin: auto;
+    display: flex;
+}
+
+.earchDivCont{
+    max-width: 900px;
+    margin: auto;
+}
+
+.earchDivCont input{
+    width: 700px;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+}
+
+.earchDivCont button{
+    padding: 15px;
+    border-radius: 10px;
+    color: #f7f7f7;
+    background-color: hsla(180, 66%, 49%);
+    border: none;
+    margin-left: 10px;
+}
+
+.earchDivCont button:hover{
+    background-color: hsla(180, 66%, 49%, 0.596);
+    cursor: pointer;
+}
+.adStats{
+    height: 1000px;
+    background-color: hsl(230deg 25% 95%);
+}
+
+.adStatsCont{
+    max-width: 1440px;
+    height: max-content;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.adStatsText{
+    width: 500px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.adStatsCont h2{
+    font-weight: 700;
+    font-size: 2rem;
+    color: hsl(255, 11%, 22%);
+    text-align: center;
+}
+
+.adStatsCont p{
+    color: hsl(0, 0%, 75%);
+    text-align: center;
+}
+
+.boardCard{
+    max-width: 1440px;
+    height: 450px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.boardCard div:nth-child(1){
+    position: relative;
+    top: 50px;
+}
+
+.boardCard div:nth-child(2){
+    position: relative;
+    top: 100px;
+}
+
+.boardCard div:nth-child(3){
+    position: relative;
+    top: 150px;
+}
+
+
+.card{
+    width: 350px;
+    height: max-content;
+    border-radius: 10px;
+    background-color: #f7f7f7;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cImg{
+    width: 70px;
+    height: 70px;
+    background-color: hsl(257, 27%, 26%);
+    padding: 20px;
+    border-radius: 50%;
+    display: flex;
+    position: relative;
+    top: -50px !important;
+}
+
+.card img{
+    width: 50px;
+    margin: auto;
+}
+
+.card span{
+    font-size: 300;
+    font-size: 1.3rem;
+    color: hsl(255, 11%, 22%);
+}
+
+.card p{
+    text-align: left;
+}
+
+.boostLinks{
+    height: 250px;
+    background-image: url(/images/bg-boost-desktop.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 110%;
+    background-color: hsl(257, 27%, 26%);
+    display: flex;
+}
+
+.boostLinksCont{
+    width: 800px;
+    height: 150px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.boostLinksCont span{
+    font-weight: 700;
+    font-size: 2.3rem;
+    color: #f7f7f7;
+    text-align: center;
+}
+
+.boostLinksCont button{
+    font-size: 1.2rem;
+    width: max-content;
+    border: none;
+    background-color: hsl(180, 66%, 49%);
+    color: #f7f7f7;
+    border-radius: 50px;
+    padding: 10px 30px;
+    cursor: pointer;
+    margin: auto;
+}
+
+.boostLinksCont button:hover{
+    background-color:  hsla(180, 66%, 49%, 0.596);
+}
