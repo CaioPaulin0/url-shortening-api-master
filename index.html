@@ -12,10 +12,11 @@
   </style>
 </head>
 <body>
+  
   <div class="container">
     <header>
       <div>
-        <span>Shortly</span>
+        <img src="./images/logo.svg" alt="">
         <ul>
           <li>Features</li>
           <li>Pricing</li>
@@ -43,14 +44,16 @@
       <div class="earchContainer">
         <div class="earchDiv">
          <div class="earchDivCont">
-         <input type="text" placeholder="Shorten a link here...">
-         <button>Shorten It!</button>
+         <input type="text" placeholder="Shorten a link here..." id="inputEarch">
+         <button id="enviarEarch">Shorten It!</button>
+         <span>teste</span>
          </div>
         </div>
       </div>
     </div>
 
     <div class="adStats">
+      <div class="adShortLinks"></div>
       <div class="adStatsCont">
         <div class="adStatsText">
           <h2>Advanced Statistics</h2>
@@ -102,11 +105,56 @@
       </div>
     </div>
 
+    <footer>
+      <div class="footerCont">
+
+        <img src="./images/logo.svg">
+
+        <div class="footerText">
+          <div>
+            <span>Features</span>
+            <ul>
+              <li>Links Shortening</li>
+              <li>Branded Links</li>
+              <li>Analytics</li>
+            </ul>
+          </div>
+
+          <div>
+            <span>Resources</span>
+            <ul>
+              <li>Blog</li>
+              <li>Developers</li>
+              <li>Support</li>
+            </ul>
+          </div>
+
+          <div>
+            <span>Company</span>
+            <ul>
+              <li>About</li>
+              <li>Our Team</li>
+              <li>Careers</li>
+              <li>Contact</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footerMediaSocial">
+          <img src="/images/icon-facebook.svg">
+          <img src="/images/icon-twitter.svg">
+          <img src="/images/icon-pinterest.svg">
+          <img src="/images/icon-instagram.svg">
+        </div>
+        
+      </div>
+      
+    </footer>
     <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
       Coded by <a href="https://www.frontendmentor.io/profile/CaioPaulin0">Caio Paulino</a>.
     </div>
   </div>
 
+  <script src="./js/index.js" type="module"></script>
 </body>
 </html>

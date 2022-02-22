@@ -62,7 +62,7 @@ header li:hover{
 }
 
 .login li:hover{
-    background-color:  hsl(180, 66%, 49%);
+    background-color:  hsl(180deg 100% 78%);
     border-radius: 50px;
     color: #f7f7f7;
 }
@@ -104,7 +104,7 @@ header li:hover{
 }
 
 .introCont button:hover{
-    background-color:  hsla(180, 66%, 49%, 0.596);
+    background-color:  hsl(180deg 100% 78%);
 }
 
 .introCont div{
@@ -115,6 +115,8 @@ header li:hover{
 
 .earch{
     height: max-content;
+    background-color: #fff;
+    background-image: conic-gradient(#fff 0deg, #fff 90deg, hsl(230deg 25% 95%) 90deg, hsl(230deg 25% 95%) 180deg, hsl(230deg 25% 95%) 180deg, hsl(230deg 25% 95%) 270deg, #fff 270deg);
 }
 
 .earchContainer{
@@ -134,18 +136,23 @@ header li:hover{
 }
 
 .earchDivCont{
-    max-width: 900px;
+    width: 90%;
+    height: 90px;
     margin: auto;
+    display: flex;
+    justify-content: space-around;
 }
 
 .earchDivCont input{
-    width: 700px;
+    width: 80%;
+    height: min-content;
     padding: 15px;
     border-radius: 10px;
-    border: none;
+    border: 2px solid transparent;
 }
 
 .earchDivCont button{
+    height: min-content;
     padding: 15px;
     border-radius: 10px;
     color: #f7f7f7;
@@ -155,11 +162,11 @@ header li:hover{
 }
 
 .earchDivCont button:hover{
-    background-color: hsla(180, 66%, 49%, 0.596);
+    background-color: hsl(180deg 100% 78%);
     cursor: pointer;
 }
 .adStats{
-    height: 1000px;
+    height: max-content;
     background-color: hsl(230deg 25% 95%);
 }
 
@@ -215,16 +222,17 @@ header li:hover{
     top: 150px;
 }
 
-
 .card{
-    width: 350px;
+    width: 400px;
     height: max-content;
-    border-radius: 10px;
+    border-radius: 5px;
     background-color: #f7f7f7;
-    padding: 15px;
+    padding: 15px ;
     display: flex;
     flex-direction: column;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.247);
 }
+
 
 .cImg{
     width: 70px;
@@ -243,13 +251,14 @@ header li:hover{
 }
 
 .card span{
-    font-size: 300;
     font-size: 1.3rem;
     color: hsl(255, 11%, 22%);
 }
 
 .card p{
+    margin-top: 10px;
     text-align: left;
+    padding-bottom: 20px;
 }
 
 .boostLinks{
@@ -291,4 +300,135 @@ header li:hover{
 
 .boostLinksCont button:hover{
     background-color:  hsla(180, 66%, 49%, 0.596);
+}
+
+footer{
+    height: 400px;
+    background-color: hsl(255, 11%, 22%);
+    display: flex;
+}
+
+.footerCont{
+    max-width: 1440px;
+    height: 190px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerCont img{
+    color: #f7f7f7;
+    width: auto;
+    height: 33px;
+}
+
+.footerText{
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerText div{
+    height: 190px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footerText span{
+    margin-bottom: 15px;
+    color: #f7f7f7;
+}
+
+.footerText ul{
+    list-style: none;
+}
+
+.footerText li{
+    margin-bottom: 10px;
+}
+
+.footerMediaSocial{
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 30px;
+}
+
+.footerMediaSocial img:hover{
+    filter: blur(5px);
+    transition: 0.2s ease-in-out;
+}
+
+.footerText li{
+    color: hsl(257, 7%, 63%);
+    cursor: pointer;
+}
+
+.footerText li:hover{
+    color: hsl(180, 66%, 49%);
+}
+
+.footerMediaSocial img:hover{
+    cursor: pointer;
+}
+
+.adShortLinks{
+    max-width: 1440px;
+    height: max-content;
+    margin: auto;
+}
+
+.adShortLinksLu{
+    max-width: 1440px;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cardShort{
+    max-width: 1440px;
+    height: min-content;
+    padding: 20px 0;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.158);
+}
+
+.cardShort div{
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    right: 20px;
+}
+
+.cardShort a{
+    color: hsl(180, 66%, 49%);
+    cursor: pointer;
+    margin: auto 0;
+}
+
+.cardShort span{
+    position: relative;
+    left: 20px;
+    margin: auto 0;
+}
+
+.cardShort button{
+    width: 110px;
+    padding: 10px;
+    border-radius: 10px;
+    color: #f7f7f7;
+    background-color: hsla(180, 66%, 49%);
+    border: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+.cardShort button:hover{
+    background-color: hsla(180, 66%, 49%, 0.596);
 }
