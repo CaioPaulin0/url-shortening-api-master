@@ -11,6 +11,7 @@
     margin: auto;
 }
 
+
 header{
     max-width: 1440px;
     height: 40px;
@@ -20,12 +21,17 @@ header{
     margin: auto;
 }
 
-header div{
+.menuDesktop{
     display: flex;
-    width: 550px;
+    width: 1250px;
     height: min-content;
     justify-content: space-between;
 }
+
+.menuMobile{
+    display: none;
+}
+
 
 header span{
     font-size: 1.6rem;
@@ -72,6 +78,7 @@ header li:hover{
     background-image: url("/images/illustration-working.svg");
     background-repeat: no-repeat;
     background-position: 60vw;
+    padding-bottom: 150px;
 }
 
 .introCont{
@@ -139,12 +146,11 @@ header li:hover{
     width: 90%;
     height: 90px;
     margin: auto;
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: auto 200px;
 }
 
 .earchDivCont input{
-    width: 80%;
     height: min-content;
     padding: 15px;
     border-radius: 10px;
@@ -165,9 +171,17 @@ header li:hover{
     background-color: hsl(180deg 100% 78%);
     cursor: pointer;
 }
+
+.errorText{
+    font-size: 0.9rem;
+    font-style: italic;
+    color:rgb(244, 98, 98);
+}
 .adStats{
     height: max-content;
     background-color: hsl(230deg 25% 95%);
+    padding-top: 50px;
+    padding-bottom: 150px;
 }
 
 .adStatsCont{
@@ -204,7 +218,16 @@ header li:hover{
     height: 450px;
     display: flex;
     justify-content: space-between;
-    z-index: 1;
+}
+
+.boardCard::before{
+    content: '';
+    display: block;
+    width: 750px;
+    height: 15px;
+    background-color: rgb(42, 207, 207);
+    position: absolute;
+    transform: translateY(225px) translateX(20vw);
 }
 
 .boardCard div:nth-child(1){
@@ -231,6 +254,7 @@ header li:hover{
     display: flex;
     flex-direction: column;
     box-shadow: 0 0 1em rgba(0, 0, 0, 0.247);
+    transform: scale(0.9);
 }
 
 
@@ -266,7 +290,7 @@ header li:hover{
     background-image: url(/images/bg-boost-desktop.svg);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 110%;
+    background-size: 150%;
     background-color: hsl(257, 27%, 26%);
     display: flex;
 }
@@ -303,6 +327,7 @@ header li:hover{
 }
 
 footer{
+    width: 100%;
     height: 400px;
     background-color: hsl(255, 11%, 22%);
     display: flex;
@@ -313,6 +338,7 @@ footer{
     height: 190px;
     margin: auto;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -348,15 +374,20 @@ footer{
 }
 
 .footerMediaSocial{
-    width: 250px;
+    width: 200px;
     display: flex;
     justify-content: space-between;
     margin-left: 30px;
 }
 
-.footerMediaSocial img:hover{
-    filter: blur(5px);
-    transition: 0.2s ease-in-out;
+.footerMediaSocial path:hover{
+    fill: #2acfcf;
+    cursor: pointer;
+}
+
+.footerMediaSocial path:hover{
+    fill: #2acfcf;
+    cursor: pointer;
 }
 
 .footerText li{
@@ -368,9 +399,11 @@ footer{
     color: hsl(180, 66%, 49%);
 }
 
-.footerMediaSocial img:hover{
-    cursor: pointer;
+.footerLogo{
+    filter: brightness(180);
+    margin-right: 40px;
 }
+
 
 .adShortLinks{
     max-width: 1440px;
@@ -431,4 +464,17 @@ footer{
 
 .cardShort button:hover{
     background-color: hsla(180, 66%, 49%, 0.596);
+}
+
+.attribution{
+    width: 100%;
+    height: 50px;
+    margin: auto;
+    background-color: hsl(257, 27%, 26%);
+    text-align: center;
+    color: #f7f7f7;
+}
+
+.attribution a{
+    color: hsl(180, 66%, 49%);
 }

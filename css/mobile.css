@@ -1,0 +1,149 @@
+
+
+@media (max-width: 1000px){
+
+    .menuDesktop{
+        display: none;
+    }
+
+    .menuMobile{
+        display: block;
+        width: 200px;
+        height: max-content;
+    }
+    
+    .menuMobile svg{
+        position: relative;
+        float: right;
+        right: 20px;
+        cursor: pointer;
+    }
+
+    .menuMobile ul{
+        width: 200px;
+        flex-direction: column;
+        background-color: hsl(257, 27%, 26%);
+        border-radius: 10px;
+    }
+    
+    .menuMobile li{
+        margin: auto;
+        color: #f7f7f7;
+    }
+
+    #ulMobile{
+        display: none;
+    }
+
+    .login {
+        border-top: 1px solid hsl(257, 7%, 63%);
+    }
+
+    .intro{
+        background-size: 550px;
+        background-position: top;
+    }
+
+    .introCont{
+        width: max-content;
+        height: max-content;
+        margin: auto;
+    }
+
+    .introCont div{
+        margin-top: 400px;
+        max-width: 400px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .introCont h1{
+        font-size: 2rem;
+        line-height: 50px;
+        text-align: center;
+    }
+
+    .introCont p{
+        font-size: 1.1rem;
+    }
+
+    .introCont button{
+        margin: auto;
+    }
+
+    .earchDiv{
+        height: 200px;
+    }
+
+    .earchDivCont{
+        height: max-content;
+        grid-template-columns: 1fr;
+    }
+
+    .errorText{
+        grid-row: 2;
+    }
+
+    .cardShort{
+        flex-direction: column;
+    }
+
+    .cardShort div{
+        position: unset;
+        flex-direction: column;
+        padding-left: 10px;
+    }
+
+    .cardShort a{
+        margin-bottom: 8px;
+    }
+
+    .cardShort span{
+        position: unset;
+        padding-left: 10px;
+        border-bottom: 1px solid rgb(201, 201, 201);
+    }
+
+    .boardCard{
+        margin: auto;
+        height: max-content;
+        flex-direction: column;
+    }
+
+    .boardCard::before{
+        transform:  translateY(225px) rotateZ(90deg);
+    }
+
+    .cImg{
+        margin: auto;
+    }
+
+    .card span{
+        margin: auto;
+    }
+
+    .card p{
+        margin: auto;
+        text-align: center;
+    }
+
+    .boostLinks{
+        height: 100%;
+    }
+
+    .boostLinksCont{
+        height: max-content;
+    }
+
+    footer{
+        height: max-content;
+    }
+
+    .footerCont{
+        height: max-content;
+    }
+
+    .footerText{
+        flex-direction: column;
+    }
+}
