@@ -75,7 +75,7 @@ header li:hover{
 
 .intro{
     height: 500px;
-    background-image: url("/images/illustration-working.svg");
+    background-image: url("../images/illustration-working.svg");
     background-repeat: no-repeat;
     background-position: 60vw;
     padding-bottom: 150px;
@@ -134,7 +134,7 @@ header li:hover{
 
 .earchDiv{
     height: 150px;
-    background-image: url("/images/bg-boost-desktop.svg");
+    background-image: url("../images/bg-boost-desktop.svg");
     background-position: center;
     background-color: hsl(257, 27%, 26%);
     border-radius: 10px;
@@ -287,7 +287,7 @@ header li:hover{
 
 .boostLinks{
     height: 250px;
-    background-image: url(/images/bg-boost-desktop.svg);
+    background-image: url("../images/bg-boost-desktop.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 150%;
