@@ -46,12 +46,13 @@ header ul{
     margin: auto 0;
 }
 
-header li{
+header a{
     cursor: pointer;
     color: hsl(257, 7%, 63%);
+    text-decoration: none;
 }
 
-header li:hover{
+header a:hover{
     color: hsl(255, 11%, 22%);
 }
 
@@ -65,6 +66,7 @@ header li:hover{
     text-align: center;
     padding: 10px 30px;
     color: hsl(257, 7%, 63%);
+    cursor: pointer;
 }
 
 .login li:hover{
@@ -193,7 +195,7 @@ header li:hover{
 }
 
 .adStatsText{
-    width: 500px;
+    max-width: 500px;
     height: 120px;
     display: flex;
     flex-direction: column;
@@ -246,7 +248,7 @@ header li:hover{
 }
 
 .card{
-    width: 400px;
+    max-width: 400px;
     height: max-content;
     border-radius: 5px;
     background-color: #f7f7f7;
